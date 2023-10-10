@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Meal App</title>
+         <!-- fontawsome link-->
+        <script src="https://kit.fontawesome.com/14097a442a.js" crossorigin="anonymous"></script>
+        <!-- bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+        <link rel="stylesheet" href = "home2.css">
+    </head>
+    <body>
+        <!-- main container -->
+        <div id="container">
+            <!-- header box containing the meal app button and favorite button -->
+            <div id="header-box">
+                <a id="home-btn" href="index.html">Meals App</a>
+                <!-- <div id="home-btn">
+                    <h5>Meal App</h5>
+                </div> -->
+                <!-- <a id="fav-btn">favourite</a> -->
+                <!-- favorite button -->
+                <button id="fav-btn" onclick="favmeallist()">favorite</button>
+                <!-- <div id="fav-btn">
+                    <h5>favourite</h5>
+                </div> -->
+                <!-- total no of meal added in fav list -->
+                <div id="fav-no">
+                    <h5>0</h5>
+                </div>
+    
+            </div>
+            <div id="search-box">
+                <!-- to find the meals foryou -->
+                <h1 id="p1">Finding Meals for you</h1>
+                <!-- <div ></div> -->
+                <!-- starts searching on asingle press -->
+                <div onkeyup="searchmeal()" id="p2">
+                    <input placeholder="search your meal here" id = "add-task" data-helloword="asdasdas">
+                </div>
+                <!-- <div><h1>your search result</h1></h1></div> -->
+    
+            </div>
+            
+
+        </div>
+        <!-- to show the result of the earch -->
+        <div id="cnt1">
+            <h1 id="srrs">Search, name of the meal</h1>
+            <!-- result appear in block form  -->
+            <div id = "main" class="d-flex justify-content-around container flex-wrap mt-5"></div>
+        </div>
+        
+        
+        <script src="home3.js"></script>
+
+
+    </body>
+</html>
